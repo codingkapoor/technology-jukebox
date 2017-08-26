@@ -9,3 +9,4 @@ My experiments with various of languages, frameworks and libraries.
 |4.|[globalmart-java-spring-resteasy](https://github.com/codingkapoor/globalmart-java-spring-resteasy)|This repository demonstrates restful webservices in Java using Spring Core and Resteasy.|Java, Spring, Resteasy|
 |5.|[spring-boot-jscalendar](https://github.com/codingkapoor/spring-boot-jscalendar)|Full page calendar built using JavaScript and SpringBoot.|Java, JavaScript, JQuery, Spring Boot|
 |6.|[play-slick-scala](https://github.com/codingkapoor/play-slick-scala)|This repository demonstrates restful webservices in Scala using Play framework and Slick.|Scala, Play, Slick|
+|7.|[wfh-calendar](https://github.com/codingkapoor/wfh-calendar)|A calendar web application.|HTML5, SASS, JQuery, RequireJS, Grunt|
