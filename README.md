@@ -14,4 +14,4 @@ My experiments with various of languages, frameworks and libraries.
 |9.|[tic-tac-toe-react-app](https://github.com/codingkapoor/tic-tac-toe-react-app)|Tic-Tac-Toe application from Reactjs tutorials.|HTML5, CSS, React, ES6|
 |10.|[books-library-react-app](https://github.com/codingkapoor/books-library-react-app)|Books library application in React.|HTML5, CSS, React, ES6|
 |11.|[weather-forecast-react-app](https://github.com/codingkapoor/weather-forecast-react-app)|Weather forecast app in React.|HTML5, CSS, React, ES6|
-|11.|[blogging-react-app](https://github.com/codingkapoor/blogging-react-app)|Blogging application in React.|HTML5, CSS, React, ES6|
+|12.|[blogging-react-app](https://github.com/codingkapoor/blogging-react-app)|Blogging application in React.|HTML5, CSS, React, ES6|
