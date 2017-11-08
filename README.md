@@ -10,8 +10,9 @@ My experiments with various of languages, frameworks and libraries.
 |5.|[spring-boot-jscalendar](https://github.com/codingkapoor/spring-boot-jscalendar)|Full page calendar built using JavaScript and SpringBoot.|Java, JavaScript, JQuery, Spring Boot|
 |6.|[play-slick-scala](https://github.com/codingkapoor/play-slick-scala)|This repository demonstrates restful webservices in Scala using Play framework and Slick.|Scala, Play, Slick|
 |7.|[wfh-calendar](https://github.com/codingkapoor/wfh-calendar)|A calendar web application.|HTML5, SASS, JQuery, RequireJS, Grunt|
-|8.|[youtube-search-app](https://github.com/codingkapoor/youtube-search-app)|Youtube search application in React.|HTML5, CSS, React, ES6|
-|9.|[tic-tac-toe-react-app](https://github.com/codingkapoor/tic-tac-toe-react-app)|Tic-Tac-Toe application from Reactjs tutorials.|HTML5, CSS, React, ES6|
-|10.|[books-library-react-app](https://github.com/codingkapoor/books-library-react-app)|Books library application in React.|HTML5, CSS, React, ES6|
-|11.|[weather-forecast-react-app](https://github.com/codingkapoor/weather-forecast-react-app)|Weather forecast app in React.|HTML5, CSS, React, ES6|
-|12.|[blogging-react-app](https://github.com/codingkapoor/blogging-react-app)|Blogging application in React.|HTML5, CSS, React, ES6|
+|8.|[youtube-search-app](https://github.com/codingkapoor/youtube-search-app)|Youtube search application in React.|HTML5, CSS, ES6, React|
+|9.|[tic-tac-toe-react-app](https://github.com/codingkapoor/tic-tac-toe-react-app)|Tic-Tac-Toe application from Reactjs tutorials.|HTML5, CSS, ES6, React|
+|10.|[books-library-react-app](https://github.com/codingkapoor/books-library-react-app)|Books library application in React.|HTML5, CSS, ES6, React, Redux|
+|11.|[weather-forecast-react-app](https://github.com/codingkapoor/weather-forecast-react-app)|Weather forecast app in React.|HTML5, CSS, ES6, React, Redux|
+|12.|[blogging-react-app](https://github.com/codingkapoor/blogging-react-app)|Blogging application in React.|HTML5, CSS, ES6, React, Redux|
+|13.|[stupid-little-website](https://github.com/codingkapoor/stupid-little-website)|A small demo site for npm scripting adventures.|NPM|
