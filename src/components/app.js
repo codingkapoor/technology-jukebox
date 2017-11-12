@@ -10,10 +10,22 @@ export default class App extends Component {
     this.state = { projects: Projects };
   }
 
+  projectSearch(term) {
+    let filteredProjects = Projects;
+
+    if(term) {
+      filteredProjects = _.filter(Projects, (o) => { return o.stack.map(_.toUpper).includes(_.toUpper(term)) });
+    }
+
+    this.setState({
+      projects: filteredProjects
+    });
+  }
+
   render() {
     return (
       <div>
-        <SearchBar />
+        <SearchBar onSearchTermChange = { this.projectSearch.bind(this) } />
         <ProjectList projects = { this.state.projects } />
       </div>
     );
