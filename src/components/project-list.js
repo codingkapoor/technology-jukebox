@@ -7,7 +7,7 @@ const ProjectList = ({ projects }) => {
   const renderProjectListItem = (projects) => {
     return projects.map((project, index) => {
         return (
-          <ProjectListItem project = { project } index = { index + 1 }/>
+          <ProjectListItem key = { project.url } project = { project } index = { index + 1 }/>
         );
       }
     );
