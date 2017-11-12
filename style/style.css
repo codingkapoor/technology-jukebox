@@ -1,0 +1,20 @@
+.jukebox-header {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: 'Special Elite', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form button {
+  margin-left: 2px;
+}

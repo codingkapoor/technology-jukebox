@@ -10,17 +10,17 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className = "search-bar col-md-6">
+      <div className = "search-bar col-lg-8 col-lg-offset-2">
         <Form onSubmit = { this.onFormSubmit }>
-          <FormGroup>
+          <FormGroup className = "search-form">
             <Input
               placeholder = "Search projects by technologies"
               value = { this.state.term }
               onChange = { event => this.setState({ term: event.target.value }) } />
+            <Button color="primary">
+              <i className="fa fa-search" aria-hidden="true"></i>
+            </Button>
           </FormGroup>
-          <Button color="primary">
-            <i className="fa fa-search" aria-hidden="true"></i>
-          </Button>
         </Form>
       </div>
     );
