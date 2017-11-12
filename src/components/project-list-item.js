@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'reactstrap';
+import _ from 'lodash';
 
-const ProjectListItem = () => {
+const ProjectListItem = ({ project, index }) => {
   return (
     <tr>
-      <td>1.</td>
-      <td><NavLink href="#">akka-scala</NavLink></td>
-      <td>This repository includes projects that attempt to explore Akka toolkit in Scala.</td>
-      <td>Scala, Akka</td>
+      <td>{ index + '.' }</td>
+      <td><NavLink href={ project.url } target="_blank">{ project.name }</NavLink></td>
+      <td>{ project.desc }</td>
+      <td>{ _.join(project.stack, ', ') }</td>
     </tr>
   );
 };

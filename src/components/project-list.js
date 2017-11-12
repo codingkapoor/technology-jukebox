@@ -3,10 +3,13 @@ import { Table, NavLink } from 'reactstrap';
 
 import ProjectListItem from './project-list-item';
 
-const ProjectList = () => {
-  const renderProjectListItem = () => {
-    return (
-      <ProjectListItem />
+const ProjectList = ({ projects }) => {
+  const renderProjectListItem = (projects) => {
+    return projects.map((project, index) => {
+        return (
+          <ProjectListItem project = { project } index = { index + 1 }/>
+        );
+      }
     );
   }
 
@@ -22,7 +25,7 @@ const ProjectList = () => {
           </tr>
         </thead>
         <tbody>
-          {renderProjectListItem()}
+          { renderProjectListItem(projects) }
         </tbody>
       </Table>
     </div>
