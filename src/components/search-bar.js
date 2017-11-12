@@ -11,7 +11,7 @@ class SearchBar extends Component {
     return (
       <div className = "search-bar col-md-6">
         <Input
-          placeholder = "Search projects by technology"
+          placeholder = "Search projects by technologies"
           value = { this.state.term }
           onChange = { event => this.setState({ term: event.target.value }) } />
       </div>
