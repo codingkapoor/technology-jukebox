@@ -25,7 +25,7 @@ const Projects = [
 	},
 	{
 		"name": "spring-boot-jscalendar",
-		"url": "https://github.com/codingkapoor/play-slick-scala",
+		"url": "https://github.com/codingkapoor/spring-boot-jscalendar",
 		"desc": "Full page calendar built using JavaScript and SpringBoot.",
 		"stack": ["Java", "JavaScript", "JQuery", "Spring Boot"]
 	},
