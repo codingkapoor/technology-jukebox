@@ -1,4 +1,4 @@
-const Projects = [
+[
 	{
 		"name": "styles-conference",
 		"url": "https://github.com/codingkapoor/styles-conference",
@@ -84,5 +84,3 @@ const Projects = [
 		"stack": ["HTML5", "CSS3", "ES6", "React"]
 	}
 ]
-
-export default Projects;

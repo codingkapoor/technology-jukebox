@@ -30,6 +30,7 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
     "bootstrap": "~3.3.7",
+    "json-loader": "^0.5.7",
     "lodash": "^4.0.0",
     "react": "~0.14.3",
     "react-autosuggest": "^9.3.2",
