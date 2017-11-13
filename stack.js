@@ -2,7 +2,7 @@ const Projects = [
 	{
 		"name": "styles-conference",
 		"url": "https://github.com/codingkapoor/styles-conference",
-		"desc": "Bootstrapped version of 'StylesConference' website created by Shay Howe for the purpose of tutorial @learn.shayhowe.com http://bit.ly/1kjQk1b",
+		"desc": "Bootstrapped version of 'StylesConference' website created by Shay Howe @learn.shayhowe.com.",
 		"stack": ["HTML5", "CSS3", "BootStrap"]
 	},
 	{
