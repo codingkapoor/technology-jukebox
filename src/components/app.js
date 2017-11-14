@@ -12,10 +12,20 @@ export default class App extends Component {
     super(props);
 
     this.technologiesSearchPool = getTechnologiesSearchPool();
+
+    const projectsPerPage = 10;
+    const currentPage = 1;
+    const projects = Projects;
+    const totalPages = Math.ceil(Projects.length / projectsPerPage);
+
+    const currentProjects = getCurrentProjects(currentPage, projectsPerPage, projects);
+
     this.state = {
-      projects: Projects,
-      currentPage: 1,
-      totalPages: 2,
+      projects,
+      currentProjects,
+      projectsPerPage,
+      currentPage,
+      totalPages,
       boundaryPagesRange: 1,
       siblingPagesRange: 1,
       hidePreviousAndNextPageLinks: false,
@@ -31,14 +41,29 @@ export default class App extends Component {
       filteredProjects = _.filter(Projects, (o) => { return o.stack.map(_.toUpper).includes(_.toUpper(term)) });
     }
 
+    const { projects, projectsPerPage } = this.state;
+    const currentPage = 1;
+
+    const currentProjects = getCurrentProjects(currentPage, projectsPerPage, projects);
+
+    const totalPages = Math.ceil(projects.length / projectsPerPage);
+
     this.setState({
-      projects: filteredProjects
+      projects: filteredProjects,
+      totalPages,
+      currentProjects,
+      currentPage
     });
   }
 
   onPageChangeFromPagination(newPage) {
-    this.setState({ currentPage: newPage });
-    console.log(this.state.currentPage);
+    const { projects, projectsPerPage } = this.state;
+    const currentProjects = getCurrentProjects(newPage, projectsPerPage, projects);
+
+    this.setState({
+      currentPage: newPage,
+      currentProjects
+    });
   }
 
   render() {
@@ -46,7 +71,7 @@ export default class App extends Component {
       <div>
         <h3 className = "jukebox-header col-lg-12">Technology Jukebox</h3>
         <SearchBar onSearchTermChange = { this.projectSearch.bind(this) } technologiesSearchPool = { this.technologiesSearchPool } />
-        <ProjectList projects = { this.state.projects } />
+        <ProjectList projects = { this.state.currentProjects } />
         <div className = "col-lg-offset-5">
           <UltimatePagination
             currentPage = { this.state.currentPage }
@@ -69,4 +94,12 @@ function getTechnologiesSearchPool() {
   var flattenedArr = Array.from(new Set(_.flatten(arr)));
 
   return flattenedArr.map(x => { return { "name": x } });
+}
+
+function getCurrentProjects(currentPage, projectsPerPage, projects) {
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+
+  return currentProjects;
 }
