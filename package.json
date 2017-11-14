@@ -38,6 +38,7 @@
     "react-redux": "4.3.0",
     "react-router": "~2.0.1",
     "react-transition-group": "~2.2.1",
+    "react-ultimate-pagination-bootstrap-4": "^1.0.2",
     "reactstrap": "~4.8.0",
     "redux": "~3.0.4"
   }

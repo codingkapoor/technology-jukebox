@@ -1,3 +1,11 @@
+.container {
+    margin-bottom: 50px;
+}
+
+.pagination {
+  display: block !important;
+}
+
 .jukebox-header {
   margin-top: 60px;
   margin-bottom: 20px;
