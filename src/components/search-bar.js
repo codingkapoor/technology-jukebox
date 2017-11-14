@@ -21,7 +21,7 @@ export default class SearchBar extends Component {
   };
 
   onSuggestionsFetchRequested = ({ value }) => {
-    let suggestions = getSuggestions(value, this.props.technologies);
+    let suggestions = getSuggestions(value, this.props.technologiesSearchPool);
     this.setState({ suggestions });
   };
 
@@ -44,14 +44,14 @@ export default class SearchBar extends Component {
         <Form onSubmit = { this.onFormSubmit }>
           <FormGroup className = "search-form">
             <AutoSuggest
-              suggestions={suggestions}
-              onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-              onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-              getSuggestionValue={getSuggestionValue}
-              renderSuggestion={renderSuggestion}
-              inputProps={inputProps} />
-            <Button color="primary">
-              <i className="fa fa-search" aria-hidden="true"></i>
+              suggestions = { suggestions }
+              onSuggestionsFetchRequested = { this.onSuggestionsFetchRequested }
+              onSuggestionsClearRequested = { this.onSuggestionsClearRequested }
+              getSuggestionValue = { getSuggestionValue }
+              renderSuggestion = { renderSuggestion }
+              inputProps = { inputProps } />
+            <Button color = "primary">
+              <i className = "fa fa-search" aria-hidden = "true"></i>
             </Button>
           </FormGroup>
         </Form>
@@ -88,6 +88,6 @@ function getSuggestionValue(suggestion) {
 
 function renderSuggestion(suggestion) {
   return (
-    <span>{suggestion.name}</span>
+    <span>{ suggestion.name }</span>
   );
 }

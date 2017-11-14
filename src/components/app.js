@@ -9,7 +9,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.technologies = getTechnologies();
+    this.technologiesSearchPool = getTechnologiesSearchPool();
     this.state = { projects: Projects };
   }
 
@@ -29,14 +29,14 @@ export default class App extends Component {
     return (
       <div>
         <h3 className = "jukebox-header col-lg-12">Technology Jukebox</h3>
-        <SearchBar onSearchTermChange = { this.projectSearch.bind(this) } technologies = { this.technologies } />
+        <SearchBar onSearchTermChange = { this.projectSearch.bind(this) } technologiesSearchPool = { this.technologiesSearchPool } />
         <ProjectList projects = { this.state.projects } />
       </div>
     );
   }
 }
 
-function getTechnologies() {
+function getTechnologiesSearchPool() {
   var arr = Projects.map(x => { return x.stack });
   var flattenedArr = Array.from(new Set(_.flatten(arr)));
 
