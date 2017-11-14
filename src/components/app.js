@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import Projects from '../../stack.json';
+import Projects from '../../projects.json';
+
 import SearchBar from './search-bar';
 import ProjectList from './project-list';
 
