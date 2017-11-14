@@ -18,10 +18,10 @@ const ProjectList = ({ projects }) => {
       <Table bordered striped>
         <thead>
           <tr>
-            <th>#</th>
-            <th>Repository</th>
-            <th>Project Description</th>
-            <th>Technology Stack</th>
+            <th className = "col-project-index">#</th>
+            <th className = "col-project-name">Repository</th>
+            <th className = "col-project-desc">Project Description</th>
+            <th className = "col-project-tstack">Technology Stack</th>
           </tr>
         </thead>
         <tbody>

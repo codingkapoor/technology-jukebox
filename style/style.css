@@ -28,7 +28,23 @@
 }
 
 .project-list {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.col-project-index {
+  width: 10%;
+}
+
+.col-project-name {
+  width: 20%;
+}
+
+.col-project-desc {
+  width: 40%;
+}
+
+.col-project-tstack {
+  width: 20%;
 }
 
 .react-autosuggest__container {
