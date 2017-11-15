@@ -17,7 +17,6 @@ export default class App extends Component {
     const currentPage = 1;
     const projects = Projects;
     const totalPages = Math.ceil(Projects.length / projectsPerPage);
-
     const currentProjects = getCurrentProjects(currentPage, projectsPerPage, projects);
 
     this.state = {
@@ -41,12 +40,10 @@ export default class App extends Component {
       filteredProjects = _.filter(Projects, (o) => { return o.stack.map(_.toUpper).includes(_.toUpper(term)) });
     }
 
-    const { projects, projectsPerPage } = this.state;
+    const { projectsPerPage } = this.state;
     const currentPage = 1;
-
-    const currentProjects = getCurrentProjects(currentPage, projectsPerPage, projects);
-
-    const totalPages = Math.ceil(projects.length / projectsPerPage);
+    const currentProjects = getCurrentProjects(currentPage, projectsPerPage, filteredProjects);
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
     this.setState({
       projects: filteredProjects,
