@@ -42,32 +42,32 @@
 		"stack": ["HTML5", "SASS", "JQuery", "RequireJS", "Grunt"]
 	},
 	{
-		"name": "youtube-search-app",
-		"url": "https://github.com/codingkapoor/youtube-search-app",
+		"name": "react-youtube-search-app",
+		"url": "https://github.com/codingkapoor/react-youtube-search-app",
 		"desc": "Youtube search application in React.",
 		"stack": ["HTML5", "CSS3", "ES6", "React"]
 	},
 	{
-		"name": "tic-tac-toe-react-app",
-		"url": "https://github.com/codingkapoor/tic-tac-toe-react-app",
+		"name": "react-tic-tac-toe-app",
+		"url": "https://github.com/codingkapoor/react-tic-tac-toe-app",
 		"desc": "Tic-Tac-Toe application from Reactjs tutorials.",
 		"stack": ["HTML5", "CSS3", "ES6", "React"]
 	},
 	{
-		"name": "books-library-react-app",
-		"url": "https://github.com/codingkapoor/books-library-react-app",
+		"name": "react-books-library-app",
+		"url": "https://github.com/codingkapoor/react-books-library-app",
 		"desc": "Books library application in React.",
 		"stack": ["HTML5", "CSS3", "ES6", "React", "Redux"]
 	},
 	{
-		"name": "weather-forecast-react-app",
-		"url": "https://github.com/codingkapoor/weather-forecast-react-app",
+		"name": "react-weather-forecast-app",
+		"url": "https://github.com/codingkapoor/react-weather-forecast-app",
 		"desc": "Weather forecast app in React.",
 		"stack": ["HTML5", "CSS", "ES6", "React", "Redux"]
 	},
 	{
-		"name": "blogging-react-app",
-		"url": "https://github.com/codingkapoor/blogging-react-app",
+		"name": "react-blogging-app",
+		"url": "https://github.com/codingkapoor/react-blogging-app",
 		"desc": "Blogging application in React.",
 		"stack": ["HTML5", "CSS", "ES6", "React", "Redux"]
 	},
