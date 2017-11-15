@@ -3,11 +3,11 @@ import { Table, NavLink } from 'reactstrap';
 
 import ProjectListItem from './project-list-item';
 
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects, currentPage }) => {
   const renderProjectListItem = (projects) => {
     return projects.map((project, index) => {
         return (
-          <ProjectListItem key = { project.url } project = { project } index = { index + 1 }/>
+          <ProjectListItem key = { project.url } project = { project } index = { (10 * (currentPage - 1)) + (index + 1) }/>
         );
       }
     );

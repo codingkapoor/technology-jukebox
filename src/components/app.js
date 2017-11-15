@@ -68,7 +68,7 @@ export default class App extends Component {
       <div>
         <h3 className = "jukebox-header col-lg-12">Technology Jukebox</h3>
         <SearchBar onSearchTermChange = { this.projectSearch.bind(this) } technologiesSearchPool = { this.technologiesSearchPool } />
-        <ProjectList projects = { this.state.currentProjects } />
+        <ProjectList projects = { this.state.currentProjects } currentPage = { this.state.currentPage }/>
         <div className = "col-lg-offset-5">
           <UltimatePagination
             currentPage = { this.state.currentPage }
