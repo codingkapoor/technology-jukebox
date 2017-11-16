@@ -18,7 +18,16 @@ export default class SearchBar extends Component {
     this.setState({
       value: newValue
     });
+
+    if(!newValue) {
+      this.props.onSearchTermChange(newValue);
+    }
   };
+
+  onFormSubmit(event) {
+    event.preventDefault();
+    this.props.onSearchTermChange(this.state.value);
+  }
 
   onSuggestionsFetchRequested = ({ value }) => {
     let suggestions = getSuggestions(value, this.props.technologiesSearchPool);
@@ -57,11 +66,6 @@ export default class SearchBar extends Component {
         </Form>
       </div>
     );
-  }
-
-  onFormSubmit(event) {
-    event.preventDefault();
-    this.props.onSearchTermChange(this.state.value);
   }
 
 }
