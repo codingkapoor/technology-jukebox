@@ -40,17 +40,19 @@ export default class App extends Component {
       filteredProjects = _.filter(Projects, (o) => { return o.stack.map(_.toUpper).includes(_.toUpper(term)) });
     }
 
-    const { projectsPerPage } = this.state;
-    const currentPage = 1;
-    const currentProjects = getCurrentProjects(currentPage, projectsPerPage, filteredProjects);
-    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    if(filteredProjects.length) {
+      const { projectsPerPage } = this.state;
+      const currentPage = 1;
+      const currentProjects = getCurrentProjects(currentPage, projectsPerPage, filteredProjects);
+      const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
 
-    this.setState({
-      projects: filteredProjects,
-      totalPages,
-      currentProjects,
-      currentPage
-    });
+      this.setState({
+        projects: filteredProjects,
+        totalPages,
+        currentProjects,
+        currentPage
+      });
+    }
   }
 
   onPageChangeFromPagination(newPage) {
