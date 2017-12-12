@@ -81,6 +81,12 @@
 		"name": "technology-jukebox",
 		"url": "https://github.com/codingkapoor/technology-jukebox",
 		"desc": "A simple tool that lists and allows to search projects that I create as part of my experiments with various of languages, frameworks and libraries. ",
-		"stack": ["HTML5", "CSS3", "ES6", "React"]
-	}
+		"stack": ["HTML5", "CSS3", "ES6", "React", "Reactstrap"]
+	},
+	{
+		"name": "imdb-catalogue",
+		"url": "https://github.com/codingkapoor/imdb-catalogue",
+		"desc": "A catalogue for IMDB movies. .",
+		"stack": ["HTML5", "CSS3", "ES6", "React", "Redux", "MongoDB", "Mongoose", "Express", "Axios", "Reactstrap"]
+	}	
 ]
