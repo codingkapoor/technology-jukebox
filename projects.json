@@ -88,5 +88,11 @@
 		"url": "https://github.com/codingkapoor/imdb-catalogue",
 		"desc": "A catalogue for IMDB movies.",
 		"stack": ["HTML5", "CSS3", "ES6", "React", "Redux", "MongoDB", "Mongoose", "Express", "Axios", "Reactstrap"]
+	},
+	{
+		"name": "javascript-dot-antlr-parser",
+		"url": "https://github.com/codingkapoor/javascript-dot-antlr-parser",
+		"desc": "The objective of this project is to demostrate how to capture diagnostics i.e., semantic and syntactic errors for DOT language using ANTLR parser written in Javascript.",
+		"stack": ["Javascript", "ANTLR4", "NPM"]
 	}	
 ]
